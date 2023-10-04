@@ -1,12 +1,19 @@
+import { CartProvider } from './context/CartContext';
+
+import MainLayout from './layouts/MainLayout';
+import MainRouter from './routes/MainRouter';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { MainRouter } from './routes/MainRouter';
+
 
 function App() {
 
   return (
-    <div>
+    <CartProvider>
+      <MainLayout>
       <MainRouter />
-    </div>
+    </MainLayout>
+    </CartProvider>
   )
 }
 

@@ -1,7 +1,12 @@
-import { useCollection } from "../hooks/useCollection"
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
-export const Home = () => {
-  const {data, loading} = useCollection('products')
+import LoaderComponent from "../components/LoaderComponent/LoaderComponent"
+import { useCollection } from "../hooks/useCollection"
 
-  return loading ? <h1>Cargando...</h1> : <ItemListContainer productsData={data} />
+const Home = () => {
+
+    const {data, loading} = useCollection("products")
+
+  return loading ? <LoaderComponent /> : <ItemListContainer productsData={data} />
 }
+
+export default Home

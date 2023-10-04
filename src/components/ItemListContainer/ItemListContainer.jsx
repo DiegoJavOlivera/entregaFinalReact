@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import styles from "./ItemListContainer.module.scss"
+
+import styles from "./ItemListContainer.module.scss";
 
 const ItemListContainer = ({ productsData }) => {
 

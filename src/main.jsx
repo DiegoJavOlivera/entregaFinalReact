@@ -1,20 +1,17 @@
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import React from 'react'
 import { initializeApp } from "firebase/app";
 
-
-
 const firebaseConfig = {
-  apiKey: "AIzaSyD9pMdGQXhWUor4qrNype3rDJv-uz6E2jQ",
-  authDomain: "tienda-diego-react.firebaseapp.com",
-  projectId: "tienda-diego-react",
-  storageBucket: "tienda-diego-react.appspot.com",
-  messagingSenderId: "552603358041",
-  appId: "1:552603358041:web:15ff2c15c0ad9e2f5e7248"
+  apiKey: "AIzaSyAvYcYMZRkfYBgHEu11vfmQUrf9SkcAqcQ",
+  authDomain: "comision-47160-ecommerce.firebaseapp.com",
+  projectId: "comision-47160-ecommerce",
+  storageBucket: "comision-47160-ecommerce.appspot.com",
+  messagingSenderId: "231764132002",
+  appId: "1:231764132002:web:08bc81e15e4454e32d17fb"
 };
-
 
 initializeApp(firebaseConfig);
 
@@ -22,8 +19,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-
-
 )
-
-
